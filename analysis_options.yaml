@@ -1,0 +1,24 @@
+# Para habilitar una de las sentencias de abajo, primero debe instalarse
+# el paquete LINT en la sección "dev_dependencies"
+# include: package:lint/analysis_options.yaml
+# include: package:lint/analysis_options_package.yaml
+
+analyzer:
+  errors:
+    todo: ignore
+    use_string_buffers: info
+    prefer_single_quotes: info
+    exhaustive_cases: warning
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+    - "**/*.gql.dart"
+    - "**/*.gql.g.dart"
+linter:
+  rules:
+    - prefer_relative_imports
+    - use_string_buffers
+    - prefer_single_quotes
+    - exhaustive_cases
+    
+# reference: https://chromium.googlesource.com/external/github.com/flutter/flutter/+/refs/heads/dev/analysis_options.yaml
