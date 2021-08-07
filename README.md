@@ -1,16 +1,9 @@
-# multilanguage_app_with_getx_hive_v2
+# Multilanguage App with Getx and Hive (version 2)
 
-A new Flutter project.
+Thanks to [@ayberkca](https://github.com/ayberkcal) I had knowledge of `appendTranslations` method, this motivated me to review the code and improve it. The code is smaller and more clear. Enjoy it!
 
-## Getting Started
+![preview](preview.gif)
 
-This project is a starting point for a Flutter application.
+**Note**
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- `wnetworking` package is not ready to publish yet, it contains operations related to API, etc. You can replace `HttpReqService.getJson` with your typical `http.get` but keep in mind the return value and exceptions.

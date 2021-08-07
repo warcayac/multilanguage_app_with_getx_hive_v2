@@ -1,9 +1,9 @@
 import 'package:drop_cap_text/drop_cap_text.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:get/get.dart';
 
 import 'widgets/drawer.dart';
-import '../../shared/constants.dart';
 
 
 class HomePage extends StatelessWidget {
@@ -38,7 +38,7 @@ class HomePage extends StatelessWidget {
   /* ---------------------------------------------------------------------------- */
   DropCapText _buildDropCapText() {
     return DropCapText(
-      kSummary,
+      'summary'.tr,
       dropCapPosition: DropCapPosition.end,
       dropCap: DropCap(
         child: _buildCover(), 
@@ -63,7 +63,7 @@ class HomePage extends StatelessWidget {
           );
         },
       ),
-      title: Text('Berserk'),
+      title: Text('title'.tr),
       centerTitle: true,
     );
   }

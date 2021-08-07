@@ -298,6 +298,20 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.0"
+  hive:
+    dependency: "direct main"
+    description:
+      name: hive
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.4"
+  hive_flutter:
+    dependency: "direct main"
+    description:
+      name: hive_flutter
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.1.0"
   http:
     dependency: transitive
     description:
@@ -397,7 +411,7 @@ packages:
     source: hosted
     version: "0.2.1"
   path_provider:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: path_provider
       url: "https://pub.dartlang.org"
@@ -604,6 +618,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.2.5"
+  wnetworking:
+    dependency: "direct main"
+    description:
+      path: "../../../../../../Projects/dart/_Packages_/wnetworking"
+      relative: true
+    source: path
+    version: "1.0.0"
   xdg_directories:
     dependency: transitive
     description:
@@ -618,6 +639,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "5.1.2"
+  xml2json:
+    dependency: transitive
+    description:
+      name: xml2json
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "5.3.1"
   yaml:
     dependency: transitive
     description:

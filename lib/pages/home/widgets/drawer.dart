@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import '../../../services/language_repository.dart';
 
 import 'language_option.dart';
 
@@ -24,10 +25,10 @@ class WDrawer extends StatelessWidget {
               Text('Choose your favorite language.', style: TextStyle(fontSize: 12)),
               SizedBox(height: 10),
               _buildDefaultText(),
-              WLanguageOption(countryCode: 'us', label: 'English', selected: true),
-              WLanguageOption(countryCode: 'cn', label: '中文'),
-              WLanguageOption(countryCode: 'kr', label: '한국어'),
-              WLanguageOption(countryCode: 'es', label: 'Español'),
+              WLanguageOption(country: 'us', label: 'English', language: EnglishLang()),
+              WLanguageOption(country: 'cn', label: '中文', language: ChineseLang()),
+              WLanguageOption(country: 'kr', label: '한국어', language: KoreanLang()),
+              WLanguageOption(country: 'es', label: 'Español', language: SpanishLang()),
               SizedBox(height: 20),
             ],
           ),
